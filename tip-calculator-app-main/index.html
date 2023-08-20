@@ -17,26 +17,35 @@
 <body>
 
   <div class="main">
-    
+    <h1 class="heading"> SPLI <br>TTER</h1>
     <div class="container">
       <div class="first-column">
         
-        <form action="" class="dollar">
+        <form action="" class="dollar" id="form">
           <label for="" class="bill">Bill
            <input type="text" id="price">
           </label>
         </form>
         <p class="bill">Select tip %</p>
         <div class="btn">
-          <button class="tip" id="tip-1">5%</button>
-          <button class="tip" id="tip-2">10%</button>
-          <button class="tip" id="tip-3">15%</button>
-          <button class="tip" id="tip-4">25%</button>
-          <button class="tip" id="tip-5">50%</button>
-          <button class="tip" id="tip-6">Custom</button>
+          <button class="tip" id="tip%" data-value="5">5%</button>
+          <button class="tip" id="tip%" data-value="10">10%</button>
+          <button class="tip" data-value="15">15%</button>
+          <button class="tip" data-value="25">25%</button>
+          <button class="tip" data-value="50">50%</button>
+          <button class="tip" data-value="50">custom</button>
+          <!-- <form class="clear-input-container"> -->
+            <!-- <input class="tip" type="text" id="custom">
+            <button
+              class="clear-input-button "
+
+             
+            >Custom</button>
+          </form> -->
+          
         </div>
-        <form action="" class="number">
-          <label for="" class="bill" >Number of people
+        <form action="" class="number" id="form">
+          <label for="" class="bill" >Number of people <span class="warning">Can't be zero</span>
             <input type="text" id="number-of-people" name="price" >
           </label>
         </form>
@@ -45,12 +54,14 @@
 <div class="background">
   <div class="person-tip">
     <p>Tip amount <br> <span>/person</span></p>
+
 <h3><span id="person">$0.00</span></h3>
     
     
   </div>
   <div class="person-tip">
     <p>Total <br> <span>/person</span></p>
+    
 <h3><span id="total">$0.00</span></h3>
    
   </div>
