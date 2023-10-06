@@ -28,16 +28,12 @@ function calculateTip(){
       
     })
     }
-    
-    
     calculateTip()
-   {
-        const resetBtn=document.querySelector(".reset")
-        resetBtn.addEventListener("click",function(){
-            document.getElementById("form").reset();
-            document.getElementById("form2").reset()
-        })
-    }
+    const resetBtn=document.querySelector(".reset") 
+    resetBtn.addEventListener("click",function(){
+        document.getElementById("form").reset()
+    })   
+   
        
 
 // let inputValue=(Number(custom.value))

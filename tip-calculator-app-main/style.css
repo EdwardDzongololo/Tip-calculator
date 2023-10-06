@@ -154,6 +154,7 @@ button:hover, .active:hover{
 .heading{
     display: flex;
     margin: 0.75rem auto;
+    color:hsl(183, 100%, 15%);
     
 }
 @media only screen and (max-width: 600px) {
